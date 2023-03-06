@@ -27,20 +27,138 @@ h1, .logo{
 
 .list{
     display: flex;
-    width: 40%;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .list a{
     font-size: 20px;
     font-family: 'Poppins', sans-serif;
+    margin-left: 60px;
     color: #200F0F;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.list a:hover{
+    border-bottom: 2px solid black;
 }
 
 .hero{
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(#747474, #fff);
+    background: linear-gradient(#A5A5A5, #fff);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 6rem;
+}
+
+section{
+    padding: 0 18%;
+}
+
+.hero-text h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-text h3{
+    font-family: 'Lexend Deca',sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.hero-text h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    margin: 0 0 20px;
+}
+
+.hero-text p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    width: 500px;
+    height: auto;
+}
+
+.hero-img{
+    margin-left: 30px;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: #f6f6f6;
+    border: 1px solid transparent;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;    
+    background-color: #3D2222;
+    padding: 12px 35px;
+    line-height: 1.4;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: all .55s ease;
+    text-transform: uppercase;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: #3D2222;
+    transform: translateX(8px);
+}
+
+.hero-text a.cta{
+    margin-left: 20px;
+}
+
+.hero-text a.cta i{
+    vertical-align: text-top;
+    padding-right: 4px;
+}
+
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+
+.icons i{
+    display: block;
+    font-size: 24px;
+    margin: 26px 0 26px 40px;
+    color:#000;
+    transition: all .55s ease;
+}
+
+.icons i:hover{
+    color: #3D2222;
+    transform: translateY(-8px);
+}
+
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    background: #3D2222;
+    font-size: 25px;
+    color: white;
+    border-radius: 30px;
+    transition: all .55s  ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-8px);
 }
